@@ -23,7 +23,7 @@ import time
 import zipfile
 
 APP_NAME = "OpenRF Studio"
-APP_VERSION = "3.0.8"
+APP_VERSION = "3.0.9"
 APP_EXE = "OpenRF_Studio.exe"
 PUBLISHER = "BG9LP"
 REG_PATH = r"Software\Microsoft\Windows\CurrentVersion\Uninstall\OpenRF_Studio"

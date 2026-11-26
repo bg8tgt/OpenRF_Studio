@@ -10,7 +10,8 @@ a = Analysis(
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
-    excludes=[],
+    # _secrets.py 只存在于本机（含密钥），绝不能打进发布包
+    excludes=['app.ai._secrets'],
     noarchive=False,
     optimize=0,
 )

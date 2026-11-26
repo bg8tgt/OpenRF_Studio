@@ -34,7 +34,7 @@ from .ai_panel import AIPanel
 from ..rfmath import fmt_db, fmt_num, fmt_vswr
 
 APP_NAME = "OpenRF Studio 射频工作台"
-VERSION = "3.0.8"
+VERSION = "3.0.9"
 
 
 def asset_path(name: str) -> str:
