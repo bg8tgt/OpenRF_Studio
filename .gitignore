@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# 本地私有配置（含 API Key，绝不入库）
+app/ai/_secrets.py
+
+# 构建产物
+build/
+dist/
+installer/_stage/
+installer/out/
+installer/build/
+installer/payload.zip
+installer/*.spec
+
+# 运行期输出
+ai_output/
+*.log
+error.log
+runtime.log
+
+# 一次性脚本（本地临时代码，不随项目发布）
+tools/_*.py
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
