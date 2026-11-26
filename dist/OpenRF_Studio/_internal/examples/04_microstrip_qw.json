@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "name": "04_microstrip_qw",
+  "freq_unit": "GHz",
+  "len_unit": "mm",
+  "analysis": {
+    "start_ghz": 1.0,
+    "stop_ghz": 4.0,
+    "points": 301,
+    "sweep": "linear",
+    "step_ghz": 0.0,
+    "single": false
+  },
+  "network": {
+    "z0": 50.0,
+    "components": [
+      {
+        "id": "MS1",
+        "kind": "MS",
+        "nodes": [
+          "n1",
+          "n2"
+        ],
+        "params": {
+          "w": 1.1454972991072763,
+          "h": 0.508,
+          "er": 3.55,
+          "len": 18.722303495081665,
+          "loss": 0.0
+        },
+        "note": ""
+      }
+    ],
+    "ports": [
+      {
+        "id": "P1",
+        "node": "n1"
+      },
+      {
+        "id": "P2",
+        "node": "n2"
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "name": "01_lowpass_3ghz",
+  "freq_unit": "GHz",
+  "len_unit": "mm",
+  "analysis": {
+    "start_ghz": 0.5,
+    "stop_ghz": 6.0,
+    "points": 401,
+    "sweep": "linear",
+    "step_ghz": 0.0,
+    "single": false
+  },
+  "network": {
+    "z0": 50.0,
+    "components": [
+      {
+        "id": "L1",
+        "kind": "L",
+        "nodes": [
+          "n1",
+          "m0"
+        ],
+        "params": {
+          "l": 4.23440046626138
+        },
+        "note": ""
+      },
+      {
+        "id": "C1",
+        "kind": "C",
+        "nodes": [
+          "m0",
+          "0"
+        ],
+        "params": {
+          "c": 1.1636143572412903
+        },
+        "note": ""
+      },
+      {
+        "id": "L2",
+        "kind": "L",
+        "nodes": [
+          "m0",
+          "m2"
+        ],
+        "params": {
+          "l": 4.23440046626138
+        },
+        "note": ""
+      }
+    ],
+    "ports": [
+      {
+        "id": "P1",
+        "node": "n1"
+      },
+      {
+        "id": "P2",
+        "node": "m2"
+      }
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "name": "03_wilkinson_2ghz",
+  "freq_unit": "GHz",
+  "len_unit": "mm",
+  "analysis": {
+    "start_ghz": 1.5,
+    "stop_ghz": 2.5,
+    "points": 201,
+    "sweep": "linear",
+    "step_ghz": 0.0,
+    "single": false
+  },
+  "network": {
+    "z0": 50.0,
+    "components": [
+      {
+        "id": "T1",
+        "kind": "TL",
+        "nodes": [
+          "p1",
+          "p2"
+        ],
+        "params": {
+          "z0": 70.7107,
+          "er": 1.0,
+          "len": 37.47405725
+        },
+        "note": ""
+      },
+      {
+        "id": "T2",
+        "kind": "TL",
+        "nodes": [
+          "p1",
+          "p3"
+        ],
+        "params": {
+          "z0": 70.7107,
+          "er": 1.0,
+          "len": 37.47405725
+        },
+        "note": ""
+      },
+      {
+        "id": "R1",
+        "kind": "R",
+        "nodes": [
+          "p2",
+          "p3"
+        ],
+        "params": {
+          "r": 100.0
+        },
+        "note": ""
+      }
+    ],
+    "ports": [
+      {
+        "id": "P1",
+        "node": "p1"
+      },
+      {
+        "id": "P2",
+        "node": "p2"
+      },
+      {
+        "id": "P3",
+        "node": "p3"
+      }
+    ]
+  }
+}

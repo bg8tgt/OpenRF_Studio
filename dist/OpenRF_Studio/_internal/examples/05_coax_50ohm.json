@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "name": "05_coax_50ohm",
+  "freq_unit": "GHz",
+  "len_unit": "mm",
+  "analysis": {
+    "start_ghz": 0.5,
+    "stop_ghz": 3.0,
+    "points": 201,
+    "sweep": "linear",
+    "step_ghz": 0.0,
+    "single": false
+  },
+  "network": {
+    "z0": 50.0,
+    "components": [
+      {
+        "id": "X1",
+        "kind": "COAX",
+        "nodes": [
+          "n1",
+          "n2"
+        ],
+        "params": {
+          "d_in": 0.91,
+          "d_out": 3.044400645311731,
+          "er": 2.1,
+          "len": 100.0
+        },
+        "note": ""
+      }
+    ],
+    "ports": [
+      {
+        "id": "P1",
+        "node": "n1"
+      },
+      {
+        "id": "P2",
+        "node": "n2"
+      }
+    ]
+  }
+}

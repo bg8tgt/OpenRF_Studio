@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "name": "示例 · 3 阶低通滤波器",
+  "analysis": {
+    "start_ghz": 0.5,
+    "stop_ghz": 6.0,
+    "points": 401,
+    "sweep": "linear"
+  },
+  "network": {
+    "z0": 50.0,
+    "components": [
+      {
+        "id": "L1",
+        "kind": "L",
+        "nodes": [
+          "n1",
+          "m0"
+        ],
+        "params": {
+          "l": 4.23440046626138
+        },
+        "note": ""
+      },
+      {
+        "id": "C1",
+        "kind": "C",
+        "nodes": [
+          "m0",
+          "0"
+        ],
+        "params": {
+          "c": 1.1636143572412903
+        },
+        "note": ""
+      },
+      {
+        "id": "L2",
+        "kind": "L",
+        "nodes": [
+          "m0",
+          "n2"
+        ],
+        "params": {
+          "l": 4.23440046626138
+        },
+        "note": ""
+      }
+    ],
+    "ports": [
+      {
+        "id": "P1",
+        "node": "n1"
+      },
+      {
+        "id": "P2",
+        "node": "n2"
+      }
+    ]
+  }
+}
